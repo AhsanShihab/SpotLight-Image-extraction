@@ -50,7 +50,7 @@ def check_new_img():
     curr_img_list = []
     file_list = os.listdir(src)
     for file in file_list:
-        if os.path.getsize(src+'/'+file)>404800:
+        if os.path.getsize(src+'/'+file)>204800:
             curr_img_list.append(file)
     
     # Form a list of new imgs
